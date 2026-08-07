@@ -102,8 +102,10 @@ h3{font-family:var(--serif);font-weight:600;font-size:20px;margin:22px 0 8px;let
 .cover .zoom{position:absolute;top:10px;right:10px;z-index:2;background:rgba(0,0,0,.34);color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;opacity:0;transition:opacity .25s}
 .cover:hover .zoom{opacity:1}
 
-.postcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.postcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;grid-auto-flow:dense}
 .postcards .cover.big{grid-column:1/-1;aspect-ratio:16/8}
+.postcards .cover.tall{grid-row:span 2;aspect-ratio:auto}
+.postcards .cover.tall .coverimg{background-position:center 32%}
 @media(max-width:520px){.postcards .cover.big{aspect-ratio:16/9}}
 
 /* day cards */
@@ -311,7 +313,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="narrows" data-title="The Narrows" role="img" aria-label="The Narrows"><div class="zoom">⤢</div><div class="coverimg bg-narrows"></div><div class="cap"><div class="k">Zion</div><div class="t">The Narrows</div></div></div>
 <div class="cover " data-photo="zion" data-title="Zion Canyon" role="img" aria-label="Zion Canyon"><div class="zoom">⤢</div><div class="coverimg bg-zion"></div><div class="cap"><div class="k">Utah</div><div class="t">Zion Canyon</div></div></div>
 <div class="cover " data-photo="bryce" data-title="Bryce hoodoos" role="img" aria-label="Bryce hoodoos"><div class="zoom">⤢</div><div class="coverimg bg-bryce"></div><div class="cap"><div class="k">Utah</div><div class="t">Bryce hoodoos</div></div></div>
-<div class="cover " data-photo="springs" data-title="Zion Canyon Hot Springs" role="img" aria-label="Zion Canyon Hot Springs"><div class="zoom">⤢</div><div class="coverimg bg-springs"></div><div class="cap"><div class="k">Springdale</div><div class="t">Zion Canyon Hot Springs</div></div></div>
+<div class="cover tall" data-photo="springs" data-title="Zion Canyon Hot Springs" role="img" aria-label="Zion Canyon Hot Springs"><div class="zoom">⤢</div><div class="coverimg bg-springs"></div><div class="cap"><div class="k">Springdale</div><div class="t">Zion Canyon Hot Springs</div></div></div>
 <div class="cover " data-photo="vegas" data-title="Las Vegas Strip" role="img" aria-label="Las Vegas Strip"><div class="zoom">⤢</div><div class="coverimg bg-vegas"></div><div class="cap"><div class="k">Nevada</div><div class="t">Las Vegas Strip</div></div></div>
 </div>
 </div>
@@ -334,6 +336,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="sedona" data-title="Ease into Sedona" role="img" aria-label="Ease into Sedona"><div class="zoom">⤢</div><div class="coverimg bg-sedona"></div><div class="cap"><div class="k">Day 01 · Wednesday</div><div class="t">Ease into Sedona</div></div></div>
 <div class="body"><div class="dayno">Day 01 — Wednesday, Sep 9</div>
 <h2 class="title" style="margin-top:4px">Ease into Sedona</h2>
+<a class="btn ghost daymap" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Phoenix+Sky+Harbor+International+Airport/Element+by+Marriott+Sedona,+Sedona,+AZ">🗺️ Phoenix → Sedona</a>
 <div class="timeline">
 <div class="stop"><div class="time">11:55 AM</div><strong>Land at PHX</strong><div class="sub">Bags · rental car · water.</div></div>
 <div class="stop"><div class="time">Early afternoon</div><strong>Drive to Sedona</strong><div class="sub">About 2 hours. No heroics after a cross-country flight.</div></div>
@@ -346,6 +349,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="sedona" data-title="Sedona adventure" role="img" aria-label="Sedona adventure"><div class="zoom">⤢</div><div class="coverimg bg-sedona"></div><div class="cap"><div class="k">Day 02 · Thursday</div><div class="t">Sedona adventure</div></div></div>
 <div class="body"><div class="dayno">Day 02 — Thursday, Sep 10</div>
 <h2 class="title" style="margin-top:4px">Sedona adventure</h2>
+<a class="btn ghost daymap" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sedona+AZ+scenic+viewpoints">🗺️ Sedona area map</a>
 <div class="choice">
 <div><strong>🥅 Feeling active</strong><br><span class="sub">Bell Rock or another scenic moderate hike, then the Chapel of the Holy Cross.</span></div>
 <div><strong>😌 Feeling sleepy</strong><br><span class="sub">Short trail, coffee, Tlaquepaque, pool time, sunset.</span></div>
@@ -356,6 +360,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="dunes" data-title="The scenic transfer" role="img" aria-label="The scenic transfer"><div class="zoom">⤢</div><div class="coverimg bg-dunes"></div><div class="cap"><div class="k">Day 03 · Friday · Road trip</div><div class="t">The scenic transfer</div></div></div>
 <div class="body"><div class="dayno">Day 03 — Friday, Sep 11</div>
 <h2 class="title" style="margin-top:4px">The scenic transfer</h2>
+<a class="btn ghost daymap" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Sedona,+AZ/Horseshoe+Bend/Coral+Pink+Sand+Dunes+State+Park,+UT/Springdale,+UT">🗺️ Friday's scenic drive</a>
 <div class="choice">
 <div><strong>Sedona → Horseshoe Bend</strong><br><span class="sub">~3 hr 15 min. Best first big break. Restrooms at the parking area.</span></div>
 <div><strong>Horseshoe → Coral Pink</strong><br><span class="sub">Use Page for the lunch + gas + bathroom reset before heading west.</span></div>
@@ -375,6 +380,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="narrows" data-title="Zion → soak → stars" role="img" aria-label="Zion → soak → stars"><div class="zoom">⤢</div><div class="coverimg bg-narrows"></div><div class="cap"><div class="k">Day 04 · Saturday · Main event</div><div class="t">Zion → soak → stars</div></div></div>
 <div class="body"><div class="dayno">Day 04 — Saturday, Sep 12</div>
 <h2 class="title" style="margin-top:4px">Zion, then stop moving on purpose</h2>
+<a class="btn ghost daymap" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Red+Cliffs+Lodge+Zion,+Springdale,+UT/Zion+National+Park/Zion+Canyon+Hot+Springs">🗺️ Zion → hot springs</a>
 <p class="quote">Morning and midday in Zion. Then the whole point of the evening is to do nothing beautifully.</p>
 <div class="timeline">
 <div class="stop"><div class="time">Morning</div><strong>Breakfast + into Zion</strong><div class="sub">The 2026 canyon shuttle starts at 7 AM on Sep 12.</div></div>
@@ -406,6 +412,7 @@ textarea{min-height:80px;resize:vertical}
 <div class="cover " data-photo="bryce" data-title="Choose your own adventure" role="img" aria-label="Choose your own adventure"><div class="zoom">⤢</div><div class="coverimg bg-bryce"></div><div class="cap"><div class="k">Day 05 · Sunday</div><div class="t">Choose your own adventure</div></div></div>
 <div class="body"><div class="dayno">Day 05 — Sunday, Sep 13</div>
 <h2 class="title" style="margin-top:4px">Bryce? Then Vegas.</h2>
+<a class="btn ghost daymap" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Springdale,+UT/Bryce+Canyon+National+Park/Las+Vegas,+NV">🗺️ Bryce → Vegas</a>
 <p class="sub">Tap how you're feeling — the guide tells you what kind of day that is.</p>
 <div class="energy">
 <button type="button" data-energy-choice="great">😀 Great</button>
