@@ -1,21 +1,23 @@
 # Trip guide photos
 
-Drop your photos in this folder using the exact filenames below and they'll
-appear automatically in the guide (until a file is added, a matching
-illustration shows in its place, so nothing ever looks broken).
+Drop your photos in this folder using the exact filenames below and they appear
+automatically in the guide. Until a file is added, a matching illustration shows
+in its place, so nothing ever looks broken.
 
-| Filename            | Which photo to use                                             | Where it shows up |
-|---------------------|----------------------------------------------------------------|-------------------|
-| `hero.jpg`          | The golden sunset over the mountains (sunburst)                | Big cover / masthead at the top |
-| `sunrise-ridges.jpg`| The pink/purple layered sunrise ridges                         | Postcards + Thursday (Newfound Gap) header |
-| `autumn-valley.jpg` | The autumn valley with dramatic clouds                         | Postcards + Saturday header |
-| `cades-cove-lane.jpg`| The foggy tree-lined Cades Cove lane                          | Postcards + Sunday (Cades Cove) header |
-| `bear.jpg`          | The black bear in the tall grass                               | Postcards |
-| `laurel-falls.jpg`  | The wide multi-tier waterfall (Laurel Falls)                   | Postcards + Monday (waterfalls) header |
-| `grotto-falls.jpg`  | The tall waterfall with the pool / mossy rock (Grotto Falls)   | Postcards |
-| `ruby-falls.jpg`    | The purple-lit underground waterfall (Ruby Falls)             | Day Trip card |
-| `rock-city.jpg`     | The clifftop waterfall over the green valley (Rock City)       | Day Trip card |
+| Filename             | Which photo                                             | Status |
+|----------------------|---------------------------------------------------------|--------|
+| `hero.jpg`           | Golden sunset sunburst over the mountains               | ✅ added (optimized) |
+| `sunrise-ridges.jpg` | Fall sunrise overlook (person on the stone wall)        | ⬜ needed |
+| `autumn-valley.jpg`  | Sunrise with mountain-laurel blooms in front            | ⬜ needed |
+| `cades-cove-lane.jpg`| The winding Cades Cove road with the split-rail fence   | ⬜ needed |
+| `penguins.jpg`       | The penguins at Ripley's Aquarium                       | ⬜ needed |
+| `bear.jpg`           | Black bear in the tall grass                            | ✅ added |
+| `laurel-falls.jpg`   | Wide multi-tier waterfall                               | ✅ added |
+| `grotto-falls.jpg`   | Tall waterfall with the pool                            | ✅ added |
+| `ruby-falls.jpg`     | Purple-lit underground waterfall (Ruby Falls)           | ✅ added |
+| `rock-city.jpg`      | Clifftop waterfall over the green valley (Rock City)    | ✅ added |
 
 Notes:
-- JPGs are ideal. Keep each under ~1–2 MB so the page stays fast on a phone.
+- JPGs are ideal. Keep each roughly 1600–2400px wide and under ~1 MB so the page
+  stays fast on a phone (`hero.jpg` was auto-optimized from 19.7 MB to ~0.4 MB).
 - Filenames are case-sensitive; match them exactly (all lowercase).
